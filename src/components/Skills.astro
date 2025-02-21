@@ -12,54 +12,52 @@ import astro from "/public/img/Logos/ASTRO.png";
 
 <hr class="linea" />
 <div class="skills" id="skills">
-  <div class="seccion-tit">
+  <div class="seccion-tit" style="--order: 0;">
     <h2>Skills</h2>
   </div>
-  <div class="cada-skill">
+  <div class="cada-skill" style="--order: 0;">
     <div class="skill1">
       <Image src={html} alt="html" />
       <h2>HTML</h2>
       <p>Intermedio</p>
     </div>
-    <div class="skill1">
+    <div class="skill1" style="--order: 0;">
       <Image src={css} alt="css" />
       <h2>CSS</h2>
       <p>Básico</p>
     </div>
-    <div class="skill1">
+    <div class="skill1" style="--order: 0;">
       <Image src={js} alt="js" />
       <h2>JavaScript</h2>
       <p>Básico</p>
     </div>
-    <div class="skill1">
+    <div class="skill1" style="--order: 0;">
       <Image src={python} alt="python" />
       <h2>Python</h2>
       <p>Básico</p>
     </div>
-    <div class="skill1">
+    <div class="skill1" style="--order: 0;">
       <Image src={sql} alt="sql" />
       <h2>MySQL</h2>
       <p>Básico</p>
     </div>
-    <div class="skill1">
+    <div class="skill1" style="--order: 0;">
       <Image src={githubb} alt="github" />
       <h2>GitHub</h2>
       <p>Básico</p>
     </div>
-    <div class="skill1">
+    <div class="skill1" style="--order: 0;">
       <Image src={astro} alt="astro" />
       <h2>Astro</h2>
       <p>Básico</p>
     </div>
-    <div class="skill1">
+    <div class="skill1" style="--order: 0;">
       <Image src={english} alt="english" />
       <h2>Inglés</h2>
       <p>Básico - Intermedio</p>
     </div>
   </div>
 </div>
-<script src="/scripts/animaciones.js" is:inline></script>
-
 <style>
   .linea {
     position: relative;
@@ -91,19 +89,59 @@ import astro from "/public/img/Logos/ASTRO.png";
     background-color: #212225;
     border-radius: 7px;
     margin: 10px;
-    opacity: 0;
     align-items: center;
     justify-content: center;
+    opacity: 0;
     transform: translateY(20px);
-    transition:
-      opacity 0.5s ease,
-      transform 0.5s ease;
+    animation: fadeInSkill 0.5s ease-out forwards;
+    animation-play-state: paused;
   }
-  .skill1.visible {
-    opacity: 1;
-    transform: translateY(0);
+  .skill1:nth-child(1) {
+    animation-delay: 0.1s;
   }
 
+  .skill1:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .skill1:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .skill1:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .skill1:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+
+  .skill1:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+
+  .skill1:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+
+  .skill1:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+
+  /* Activar la animación cuando el contenedor skills entra al viewport */
+  .skills:has(.skill1:hover) .skill1 {
+    animation-play-state: running;
+  }
+  @keyframes fadeInSkill {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   .skill1 img {
     float: left;
     height: 50px;

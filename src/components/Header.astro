@@ -14,6 +14,8 @@ import yoIcono from "/public/img/yopo/luna.jpg";
     </div>
   </div>
   <nav>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-hamburguesa">☰</label>
     <ul class="nav__links">
       <li><a href="#proyectos">Proyectos</a></li>
       <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -21,10 +23,7 @@ import yoIcono from "/public/img/yopo/luna.jpg";
       <li><a href="#skills">Skills</a></li>
     </ul>
   </nav>
-
-  <button class="menu-hamburguesa" onclick="toggleMenu()">☰</button>
 </header>
-
 <style>
   @import url(https://fonts.googleapis.com/css?family=Khula:700);
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
@@ -33,6 +32,9 @@ import yoIcono from "/public/img/yopo/luna.jpg";
     margin: 0;
   }
 
+  .menu-toggle {
+    display: none;
+  }
   li,
   a {
     font-family: "Montserrat", sans-serif;
@@ -82,9 +84,12 @@ import yoIcono from "/public/img/yopo/luna.jpg";
   }
   .nav__links li {
     display: inline-block;
-  }
-  .nav__links li {
     transition: all 0.3s ease 0s;
+  }
+  .nav__links li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #edf0f1;
   }
 
   .tracking-in-expand {
@@ -206,9 +211,21 @@ import yoIcono from "/public/img/yopo/luna.jpg";
     .uwu {
       font-size: 12px; /* Texto ajustado para pantallas pequeñas */
     }
+    .menu-toggle:checked + .menu-hamburguesa + .nav__links {
+      display: flex;
+    }
+
+    /* Estilo del botón hamburguesa */
     .menu-hamburguesa {
-      display: block; /* Mostrar el botón de menú hamburguesa */
-      margin-left: auto; /* Empujar el botón hacia la derecha */
+      display: block;
+      font-size: 24px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    /* Ocultar el checkbox */
+    .menu-toggle {
+      display: none;
     }
     .nav__links.show {
       display: flex;

@@ -24,9 +24,7 @@ import sql from "/public/img/Logos/MYSQL.png";
       >
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
-      <a href="https://www.instagram.com/deare0_/?hl=es" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
+
       <a href="mailto:dariorodq30@gmail.com" target="_blank">
         <i class="fa-solid fa-envelope"></i>
       </a>
@@ -45,8 +43,6 @@ import sql from "/public/img/Logos/MYSQL.png";
     <Image src={python} class="icono" alt="Python" />
     <Image src={sql} class="icono" alt="MySQL" />
   </div>
-  <script src="/public/scripts/animaciones.js" is:inline></script>
-
   <style>
     .presentation {
       display: flex;
@@ -167,53 +163,75 @@ import sql from "/public/img/Logos/MYSQL.png";
       transition:
         transform 1s ease-out,
         opacity 0.5s;
+      will-change: transform, opacity; /* Preparar cambios */
+      animation: aparecer 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     }
 
-    /* Posiciones iniciales */
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, 50%);
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    /* Animación al cargar */
+    .activo {
+      opacity: 1;
+    }
+
+    /* Posiciones de los íconos */
     .icono:nth-child(2) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      /* HTML */
+      transform: translate(-200px, 140px);
     }
+
     .icono:nth-child(3) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      /* CSS */
+      transform: translate(170px, 150px);
     }
+
     .icono:nth-child(4) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      /* JavaScript */
+      transform: translate(-200px, 310px);
     }
+
     .icono:nth-child(5) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      /* Python */
+      transform: translate(180px, 320px);
     }
+
     .icono:nth-child(6) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      /* MySQL */
+      transform: translate(-90px, 410px);
     }
 
     /* Animación final */
     .activo:nth-child(2) {
-      transform: translate(-290%, -220px);
+      animation-delay: 0s;
+      transform: translate(10%, 10px);
       opacity: 1;
     } /*HTML*/
     .activo:nth-child(3) {
+      animation-delay: 0.15s;
       transform: translate(90px, -230%);
       opacity: 1;
     } /*CSS*/
     .activo:nth-child(4) {
+      animation-delay: 0.3s;
       transform: translate(-190px, -10%);
       opacity: 1;
     } /*JS*/
     .activo:nth-child(5) {
+      animation-delay: 0.45s;
       transform: translate(80px, 70px);
       opacity: 1;
     } /*PYTHON*/
     .activo:nth-child(6) {
+      animation-delay: 0.6s;
       transform: translate(-80px, 90px);
       opacity: 1;
     } /*MYSQL*/
@@ -328,52 +346,24 @@ import sql from "/public/img/Logos/MYSQL.png";
 
       /* Posiciones iniciales */
       .icono:nth-child(2) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .icono:nth-child(3) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .icono:nth-child(4) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .icono:nth-child(5) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .icono:nth-child(6) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-100px, 110px);
       }
 
-      /* Animación final */
-      .activo:nth-child(2) {
-        transform: translate(-290%, -120px);
-        opacity: 1;
-      } /*HTML*/
-      .activo:nth-child(3) {
-        transform: translate(100px, -220%);
-        opacity: 1;
-      } /*CSS*/
-      .activo:nth-child(4) {
-        transform: translate(-130px, 10%);
-        opacity: 1;
-      } /*JS*/
-      .activo:nth-child(5) {
-        transform: translate(50px, 50px);
-        opacity: 1;
-      } /*PYTHON*/
-      .activo:nth-child(6) {
-        transform: translate(-60px, 100px);
-        opacity: 1;
-      } /*MYSQL*/
+      .icono:nth-child(3) {
+        transform: translate(100px, 105px);
+      }
+
+      .icono:nth-child(4) {
+        transform: translate(-100px, 195px);
+      }
+
+      .icono:nth-child(5) {
+        transform: translate(100px, 200px);
+      }
+
+      .icono:nth-child(6) {
+        transform: translate(30px, 270px);
+      }
     }
 
     @media (max-width: 768px) {
@@ -433,54 +423,37 @@ import sql from "/public/img/Logos/MYSQL.png";
         height: 40px;
       }
 
-      /* Posiciones iniciales */
-      .icono:nth-child(2) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .icono:nth-child(3) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .icono:nth-child(4) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .icono:nth-child(5) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .icono:nth-child(6) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+      @media (max-width: 768px) {
+        .imagenmia {
+          width: 250px;
+          height: 250px;
+        }
 
-      /* Animación final */
-      .activo:nth-child(2) {
-        transform: translate(-190%, -120px);
-        opacity: 1;
-      } /*HTML*/
-      .activo:nth-child(3) {
-        transform: translate(70px, -120%);
-        opacity: 1;
-      } /*CSS*/
-      .activo:nth-child(4) {
-        transform: translate(-130px, -60%);
-        opacity: 1;
-      } /*JS*/
-      .activo:nth-child(5) {
-        transform: translate(30px, 30px);
-        opacity: 1;
-      } /*PYTHON*/
-      .activo:nth-child(6) {
-        transform: translate(-90px, 50px);
-        opacity: 1;
-      } /*MYSQL*/
+        .icono {
+          width: 40px;
+          height: 40px;
+        }
+
+        .icono:nth-child(2) {
+          transform: translate(-100px, 10px);
+        }
+
+        .icono:nth-child(3) {
+          transform: translate(100px, -5px);
+        }
+
+        .icono:nth-child(4) {
+          transform: translate(-100px, 95px);
+        }
+
+        .icono:nth-child(5) {
+          transform: translate(100px, 100px);
+        }
+
+        .icono:nth-child(6) {
+          transform: translate(30px, 170px);
+        }
+      }
     }
   </style>
 </div>

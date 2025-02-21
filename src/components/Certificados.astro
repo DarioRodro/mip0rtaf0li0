@@ -57,7 +57,6 @@
     </div>
   </div>
 </div>
-<script src="/scripts/animaciones.js" is:inline></script>
 
 <style>
   .linea {
@@ -90,15 +89,25 @@
     background-color: #212225;
     border-radius: 7px;
     margin: 10px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition:
-      opacity 0.5s ease,
-      transform 0.5s ease;
+    opacity: 0; /* Oculto al inicio */
+    transform: translateY(20px); /* Inicialmente desplazado */
+    animation: fadeInScroll 0.5s ease-out forwards;
+    animation-play-state: paused; /* Pausar animación hasta que se active */
   }
-  .cert1.visible {
-    opacity: 1;
-    transform: translateY(0);
+
+  .cada-cert:hover .cert1 {
+    animation-play-state: running; /* Activa la animación al hacer hover */
+  }
+  /* Animación de entrada */
+  @keyframes fadeInScroll {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .cert1 h2 {
@@ -109,6 +118,27 @@
   .cert1 p {
     font-size: 14px;
     color: #d8d8d8;
+  }
+
+  .cert1:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .cert1:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .cert1:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .cert1:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  /* Detectar si el contenedor está en el viewport */
+  .certi:has(.cert1:hover) .cert1 {
+    animation-play-state: running;
   }
 
   @media (min-width: 769px) and (max-width: 1440px) {
