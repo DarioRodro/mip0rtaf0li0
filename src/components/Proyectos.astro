@@ -4,77 +4,214 @@ import multistore from "/public/img/multistore.jpg";
 import html from "/public/img/Logos/HTML.png";
 import css from "/public/img/Logos/CSS.png";
 import js from "/public/img/Logos/JS.png";
+import python from "/public/img/Logos/PYTHON.png";
+import cpp from "/public/img/Logos/C++.png";
 import githubb from "/public/img/Logos/GITHUB-BLANCO.png";
 import astro from "/public/img/Logos/ASTRO.png";
 import miportafolio from "/public/img/MiPortafolio.png";
+import starbucks from "/public/img/Starbucks.png";
 ---
 
 <hr class="linea" />
 
 <div class="proyects" id="proyectos">
-  <div class="seccion-tit">
-    <h2>Proyectos</h2>
+  <div class="header-row">
+    <div class="seccion-tit">
+      <h2>Proyectos</h2>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="sistemas">Sistemas</button>
+      <button class="tab-btn" data-tab="web">Web</button>
+      <button class="tab-btn" data-tab="arquitectura">Arquitectura</button>
+    </div>
   </div>
-  <div class="proy1">
-    <div class="card1">
-      <h1>MultiStore - Catálogo Web</h1>
-      <p>Este fue mi primer proyecto.</p>
-      <p>
-        Realizado en el 2do semestre en SENATI. Esta pagina web, fue para una
-        tienda cercana a mi casa, la cual quería un catálogo que mostrara sus
-        productos con el fin de que sea una tienda mas conocida y aumenten sus
-        ventas.
-      </p>
-      <div class="herr">
-        <Image src={html} alt="html" class="img" />
-        <Image src={css} alt="css" class="img" />
-        <Image src={js} alt="js" class="img" />
-        <a href="https://github.com/DarioRodro/dariorodro30" target="_blank">
-          <Image src={githubb} alt="github" />
+
+  <!-- SISTEMAS -->
+  <div class="tab-content" data-content="sistemas">
+    <div class="proy1 sin-img">
+      <div class="card1">
+        <h1>Sistema Inteligente de Control de Transporte Universitario</h1>
+        <p class="badge">📄 Documentación</p>
+        <p>
+          Proyecto final del curso de C++, desarrollado en equipo de 4 personas.
+          Estuve a cargo del módulo de Estadísticas y Archivos.
+        </p>
+        <div class="herr">
+          <Image src={cpp} alt="C++" class="img" />
+          <a
+            href="/mip0rtaf0li0/docs/Sistema-TransporteUniv.pdf"
+            target="_blank"
+            class="doc-link"
+          >
+            Ver documento completo ↗
+          </a>
+        </div>
+      </div>
+      <div class="carddoc">
+        <a
+          href="/mip0rtaf0li0/docs/Sistema-TransporteUniv.pdf"
+          target="_blank"
+          class="doc-thumb"
+        >
+          <iframe
+            src="/mip0rtaf0li0/docs/Sistema-TransporteUniv.pdf#toolbar=0&navpanes=0&view=FitH"
+            title="Documentación Sistema de Transporte"
+            loading="lazy"></iframe>
         </a>
       </div>
     </div>
-    <div class="card2">
-      <a href="https://dariorodro.github.io/miportafolio/" target="_blank">
-        <Image src={multistore} alt="MultiStore" />
-      </a>
+    <div class="proy1 sin-img">
+      <div class="card1">
+        <h1>Sistema de Gestión de Consultorio Médico</h1>
+        <p class="badge">📄 Documentación</p>
+        <p>
+          Proyecto final del curso de Programación Orientada a Objetos en
+          Python. Responsable del módulo de Estadísticas y Reportes, leyendo
+          datos desde agenda.csv con pandas para generar reportes.
+        </p>
+        <div class="herr">
+          <Image src={python} alt="python" class="img" />
+          <a
+            href="/mip0rtaf0li0/docs/SistemaGestionConsultMedico.pdf"
+            target="_blank"
+            class="doc-link"
+          >
+            Ver documento completo ↗
+          </a>
+        </div>
+      </div>
+      <div class="carddoc">
+        <a
+          href="/mip0rtaf0li0/docs/SistemaGestionConsultMedico.pdf"
+          target="_blank"
+          class="doc-thumb"
+        >
+          <iframe
+            src="/mip0rtaf0li0/docs/SistemaGestionConsultMedico.pdf#toolbar=0&navpanes=0&view=FitH"
+            title="Documentación Sistema Médico"
+            loading="lazy"></iframe>
+        </a>
+      </div>
     </div>
   </div>
-  <div class="proy1">
-    <div class="card1">
-      <h1>Mi Portafolio</h1>
-      <p>Presentación</p>
-      <p>
-        Realizado como presentación de mi portafolio personal, con el fin de
-        mostrar mis habilidades, trayectoria y proyectos realizados.
-      </p>
-      <div class="herr">
-        <Image src={html} alt="html" class="img" />
-        <Image src={css} alt="css" class="img" />
-        <Image src={js} alt="js" class="img" />
+
+  <!-- WEB -->
+  <div class="tab-content" data-content="web" style="display:none">
+    <div class="proy1">
+      <div class="card1">
+        <h1>MultiStore - Catálogo Web</h1>
+        <p class="badge">🔗 En línea</p>
+        <p>
+          Realizado en el 2do semestre en SENATI. Esta pagina web, fue mi primer
+          proyecto para una tienda cercana a mi casa, la cual quería un catálogo
+          que mostrara sus productos con el fin de que sea una tienda mas
+          conocida y aumenten sus ventas.
+        </p>
+        <div class="herr">
+          <Image src={html} alt="html" class="img" />
+          <Image src={css} alt="css" class="img" />
+          <Image src={js} alt="js" class="img" />
+          <a href="https://github.com/DarioRodro/dariorodro30" target="_blank">
+            <Image src={githubb} alt="github" />
+          </a>
+        </div>
+      </div>
+      <div class="card2">
+        <a href=" https://dariorodro.github.io/dariorodro30/" target="_blank">
+          <Image src={multistore} alt="MultiStore" />
+        </a>
+      </div>
+    </div>
+
+    <div class="proy1">
+      <div class="card1">
+        <h1>Mi Portafolio</h1>
+        <p class="badge">🔗 En línea</p>
+        <p>
+          Realizado como presentación de mi portafolio personal, con el fin de
+          mostrar mis habilidades, trayectoria y proyectos realizados.
+        </p>
+        <div class="herr">
+          <Image src={html} alt="html" class="img" />
+          <Image src={css} alt="css" class="img" />
+          <Image src={js} alt="js" class="img" />
+          <a
+            href="https://github.com/DarioRodro/mip0rtaf0li0.git"
+            target="_blank"
+          >
+            <Image src={githubb} alt="github" />
+          </a>
+          <Image src={astro} alt="astro" class="astro" />
+        </div>
+      </div>
+      <div class="card2">
+        <a href="https://dariorodro.github.io/mip0rtaf0li0/" target="_blank">
+          <Image src={miportafolio} alt="Miportafolio" />
+        </a>
+      </div>
+    </div>
+
+    <div class="proy1">
+      <div class="card1">
+        <h1>Análisis Sistema Starbucks UPC</h1>
+        <p class="badge">🔗 En línea</p>
+        <p>
+          Análisis de funcionamiento del sistema de Starbucks, desarrollado como
+          proyecto académico en la UPC para un curso de Humanidades.
+        </p>
+        <div class="herr">
+          <Image src={html} alt="html" class="img" />
+          <Image src={css} alt="css" class="img" />
+          <Image src={js} alt="js" class="img" />
+          <a
+            href="https://github.com/DarioRodro/analisis-sistema-starbucks-upc.git"
+            target="_blank"
+          >
+            <Image src={githubb} alt="github" />
+          </a>
+        </div>
+      </div>
+      <div class="card2">
         <a
-          href="https://github.com/DarioRodro/mip0rtaf0li0.git"
+          href="https://dariorodro.github.io/analisis-sistema-starbucks-upc/"
           target="_blank"
         >
-          <Image src={githubb} alt="github" />
+          <Image src={starbucks} alt="Starbucks" />
         </a>
-        <Image src={astro} alt="astro" class="astro" />
       </div>
     </div>
-    <div class="card2">
-      <a href="https://dariorodro.github.io/mip0rtaf0li0/" target="_blank">
-        <Image src={miportafolio} alt="Miportafolio" />
-      </a>
-    </div>
+  </div>
+
+  <!-- ARQUITECTURA -->
+  <div class="tab-content" data-content="arquitectura" style="display:none">
+    <p class="empty-msg">Próximamente 🚧</p>
   </div>
 </div>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>(".tab-btn");
+  const contents = document.querySelectorAll<HTMLElement>(".tab-content");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      const target = btn.getAttribute("data-tab");
+      contents.forEach((c) => {
+        c.style.display =
+          c.getAttribute("data-content") === target ? "block" : "none";
+      });
+    });
+  });
+</script>
 
 <style>
   .linea {
     position: relative;
     height: 1px;
-    background-color: #000000; /* Color azul */
-    width: 20%; /* Ancho de la línea (ajústalo según lo que necesites) */
+    background-color: #000000;
+    width: 20%;
     border: 1;
     border-color: #0f53c2;
     border-radius: 40%;
@@ -88,6 +225,86 @@ import miportafolio from "/public/img/MiPortafolio.png";
     background: #15171d;
     scroll-margin-top: 200px;
   }
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .tab-btn {
+    background: none;
+    color: #d8d8d8;
+    border: none;
+    border-bottom: 1px solid #0f53c2;
+    border-radius: 00px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+  }
+  .tab-btn:hover {
+    background: #0f53c233;
+  }
+  .tab-btn.active {
+    background: #0f53c2;
+    color: #ffffff;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #212225;
+    color: #d8d8d8;
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .empty-msg {
+    color: #d8d8d8;
+    text-align: center;
+    font-size: 1rem;
+    padding: 40px 0;
+  }
+
+  .doc-link {
+    color: #ffffff;
+    font-size: 0.9rem;
+    border: 1px solid #0f53c2;
+    border-radius: 6px;
+    padding: 6px 12px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .doc-link:hover {
+    background: #0f53c233;
+  }
+
+  .doc-thumb iframe {
+    width: 200%;
+    height: 200%;
+    transform: scale(0.55);
+    transform-origin: top left;
+    border: none;
+  }
+  .tech-text {
+    color: #ffffff;
+    font-size: 0.9rem;
+    border: 1px solid #0f53c2;
+    border-radius: 6px;
+    padding: 4px 10px;
+  }
+
   .proy1 {
     display: flex;
     box-sizing: border-box;
@@ -107,23 +324,31 @@ import miportafolio from "/public/img/MiPortafolio.png";
   }
 
   .card1 {
-    width: 680px;
+    width: 600px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .card1 h1 {
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 1.5rem;
     margin-bottom: 8px;
     font-weight: normal;
+    text-decoration: none !important;
   }
   .card1 p {
-    color: #ffffff;
+    color: #ffffff !important;
     margin-bottom: 16px;
+    text-decoration: none !important;
   }
   .card1 b {
     color: #ffffff;
     margin-bottom: 16px;
+  }
+  a h1,
+  a p,
+  a .badge {
+    color: #ffffff !important;
+    text-decoration: none !important;
   }
 
   .herr {
@@ -159,10 +384,10 @@ import miportafolio from "/public/img/MiPortafolio.png";
 
   @media (min-width: 769px) and (max-width: 1440px) {
     .linea {
-      width: 50%; /* Ancho de la línea (ajústalo según lo que necesites) */
+      width: 50%;
     }
     .proyects {
-      padding: 25px 18%; /* Aumenta el padding de los lados */
+      padding: 25px 18%;
     }
     .proy1 {
       flex-direction: column;
@@ -182,6 +407,10 @@ import miportafolio from "/public/img/MiPortafolio.png";
       width: 100%;
       height: auto;
     }
+    .carddoc {
+      width: 0;
+      height: 0;
+    }
 
     .herr {
       justify-content: center;
@@ -194,7 +423,7 @@ import miportafolio from "/public/img/MiPortafolio.png";
 
   @media (max-width: 768px) {
     .linea {
-      width: 50%; /* Ancho de la línea (ajústalo según lo que necesites) */
+      width: 50%;
     }
     .proyects {
       padding: 25px 5%;
