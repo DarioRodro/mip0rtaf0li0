@@ -8,8 +8,13 @@ import python from "../assets/img/Logos/PYTHON.png";
 import cpp from "../assets/img/Logos/CPLUSPLUS.png";
 import githubb from "../assets/img/Logos/GITHUB-BLANCO.png";
 import astro from "../assets/img/Logos/ASTRO.png";
-import miportafolio from "../assets/img/MIPORTAFOLIO.png";
+import mysql from "../assets/img/Logos/MYSQL.png";
+import angular from "../assets/img/Logos/ANGULAR.png";
+import typescript from "../assets/img/Logos/TYPESCRIPT.png";
+import miportafolio from "../assets/img/MIPORTAFOLIOO.jpg";
 import starbucks from "../assets/img/STARBUCKS.png";
+import vlim from "../assets/img/VLIM.png";
+import fidyuapon from "../assets/img/FIDYUAPON.png";
 ---
 
 <hr class="linea" />
@@ -21,14 +26,162 @@ import starbucks from "../assets/img/STARBUCKS.png";
     </div>
 
     <div class="tabs">
-      <button class="tab-btn active" data-tab="sistemas">Sistemas</button>
-      <button class="tab-btn" data-tab="web">Web</button>
-      <button class="tab-btn" data-tab="arquitectura">Arquitectura</button>
+      <button class="tab-btn active" data-tab="web">Web</button>
+      <button class="tab-btn" data-tab="sistemas">Sistemas</button>
+      <!--<button class="tab-btn" data-tab="arquitectura">Arquitectura</button> -->
+    </div>
+  </div>
+
+  <!-- WEB -->
+  <div class="tab-content" data-content="web">
+    <div class="proy1">
+      <div class="card1">
+        <h1>Sistema de Gestión para Negocio de Postres</h1>
+        <p class="badge">🔗 En línea</p>
+        <p>
+          Aplicación web para gestionar productos y ventas, con panel
+          administrativo, dashboard y base de datos. Desplegada con Render,
+          utilizando Aiven para la base de datos y Cloudinary para el
+          almacenamiento de imágenes.
+        </p>
+        <div class="herr">
+          <Image src={html} alt="html" class="img" />
+          <Image src={css} alt="css" class="img" />
+          <Image src={js} alt="js" class="img" />
+          <Image src={python} alt="python" class="img" />
+          <Image src={mysql} alt="sql" class="img" />
+          <a href="https://github.com/DarioRodro/vlim" target="_blank">
+            <Image src={githubb} alt="github" />
+          </a>
+        </div>
+      </div>
+      <div class="card2">
+        <a href="https://vlim.onrender.com/" target="_blank">
+          <Image src={vlim} alt="Vlim" />
+        </a>
+      </div>
+    </div>
+
+    <div class="proy1">
+      <div class="card1">
+        <h1>Análisis Sistema Starbucks UPC</h1>
+        <p class="badge">🔗 En línea</p>
+        <p>
+          Análisis de funcionamiento del sistema de Starbucks, desarrollado como
+          proyecto académico en la UPC para un curso de Humanidades.
+        </p>
+        <div class="herr">
+          <Image src={html} alt="html" class="img" />
+          <Image src={css} alt="css" class="img" />
+          <Image src={js} alt="js" class="img" />
+          <a
+            href="https://github.com/DarioRodro/analisis-sistema-starbucks-upc.git"
+            target="_blank"
+          >
+            <Image src={githubb} alt="github" />
+          </a>
+        </div>
+      </div>
+      <div class="card2">
+        <a
+          href="https://dariorodro.github.io/analisis-sistema-starbucks-upc/"
+          target="_blank"
+        >
+          <Image src={starbucks} alt="Starbucks" />
+        </a>
+      </div>
+    </div>
+
+    <div class="proy1">
+      <div class="card1">
+        <h1>Catálogo Web</h1>
+        <p class="badge">🔗 DB Deshabilitada</p>
+        <p>
+          Catálogo web desarrollado con Angular y Strapi, integrado con una base
+          de datos en Railway y Cloudinary para el almacenamiento de imágenes.
+          El frontend está desplegado en Netlify.
+        </p>
+        <div class="herr">
+          <Image src={html} alt="html" class="img" />
+          <Image src={css} alt="css" class="img" />
+          <Image src={mysql} alt="sql" class="img" />
+          <Image src={angular} alt="angular" class="img" />
+          <Image src={typescript} alt="typescript" class="img" />
+          <a
+            href="https://github.com/DarioRodro/fyp-front-angular"
+            target="_blank"
+          >
+            <Image src={githubb} alt="github" />
+          </a>
+        </div>
+      </div>
+      <div class="card2">
+        <a
+          href="https://starlit-semolina-8a608b.netlify.app/inicio"
+          target="_blank"
+        >
+          <Image src={fidyuapon} alt="Fidyuapon" />
+        </a>
+      </div>
+    </div>
+
+    <div class="proy1">
+      <div class="card1">
+        <h1>Mi Portafolio</h1>
+        <p class="badge">🔗 En línea</p>
+        <p>
+          Realizado como presentación de mi portafolio personal, con el fin de
+          mostrar mis habilidades, trayectoria y proyectos realizados.
+        </p>
+        <div class="herr">
+          <Image src={html} alt="html" class="img" />
+          <Image src={css} alt="css" class="img" />
+          <Image src={js} alt="js" class="img" />
+          <a
+            href="https://github.com/DarioRodro/mip0rtaf0li0.git"
+            target="_blank"
+          >
+            <Image src={githubb} alt="github" />
+          </a>
+          <Image src={astro} alt="astro" class="astro" />
+        </div>
+      </div>
+      <div class="card2">
+        <a href="https://dariorodro.github.io/mip0rtaf0li0/" target="_blank">
+          <Image src={miportafolio} alt="Miportafolio" />
+        </a>
+      </div>
+    </div>
+
+    <div class="proy1">
+      <div class="card1">
+        <h1>MultiStore - Catálogo Web</h1>
+        <p class="badge">🔗 En línea</p>
+        <p>
+          Realizado en el 2do semestre en SENATI. Esta pagina web, fue mi primer
+          proyecto para una tienda cercana a mi casa, la cual quería un catálogo
+          que mostrara sus productos con el fin de que sea una tienda mas
+          conocida y aumenten sus ventas.
+        </p>
+        <div class="herr">
+          <Image src={html} alt="html" class="img" />
+          <Image src={css} alt="css" class="img" />
+          <Image src={js} alt="js" class="img" />
+          <a href="https://github.com/DarioRodro/dariorodro30" target="_blank">
+            <Image src={githubb} alt="github" />
+          </a>
+        </div>
+      </div>
+      <div class="card2">
+        <a href=" https://dariorodro.github.io/dariorodro30/" target="_blank">
+          <Image src={multistore} alt="MultiStore" />
+        </a>
+      </div>
     </div>
   </div>
 
   <!-- SISTEMAS -->
-  <div class="tab-content" data-content="sistemas">
+  <div class="tab-content" data-content="sistemas" style="display:none">
     <div class="proy1 sin-img">
       <div class="card1">
         <h1>Sistema Inteligente de Control de Transporte Universitario</h1>
@@ -96,363 +249,277 @@ import starbucks from "../assets/img/STARBUCKS.png";
     </div>
   </div>
 
-  <!-- WEB -->
-  <div class="tab-content" data-content="web" style="display:none">
-    <div class="proy1">
-      <div class="card1">
-        <h1>MultiStore - Catálogo Web</h1>
-        <p class="badge">🔗 En línea</p>
-        <p>
-          Realizado en el 2do semestre en SENATI. Esta pagina web, fue mi primer
-          proyecto para una tienda cercana a mi casa, la cual quería un catálogo
-          que mostrara sus productos con el fin de que sea una tienda mas
-          conocida y aumenten sus ventas.
-        </p>
-        <div class="herr">
-          <Image src={html} alt="html" class="img" />
-          <Image src={css} alt="css" class="img" />
-          <Image src={js} alt="js" class="img" />
-          <a href="https://github.com/DarioRodro/dariorodro30" target="_blank">
-            <Image src={githubb} alt="github" />
-          </a>
-        </div>
-      </div>
-      <div class="card2">
-        <a href=" https://dariorodro.github.io/dariorodro30/" target="_blank">
-          <Image src={multistore} alt="MultiStore" />
-        </a>
-      </div>
-    </div>
-
-    <div class="proy1">
-      <div class="card1">
-        <h1>Mi Portafolio</h1>
-        <p class="badge">🔗 En línea</p>
-        <p>
-          Realizado como presentación de mi portafolio personal, con el fin de
-          mostrar mis habilidades, trayectoria y proyectos realizados.
-        </p>
-        <div class="herr">
-          <Image src={html} alt="html" class="img" />
-          <Image src={css} alt="css" class="img" />
-          <Image src={js} alt="js" class="img" />
-          <a
-            href="https://github.com/DarioRodro/mip0rtaf0li0.git"
-            target="_blank"
-          >
-            <Image src={githubb} alt="github" />
-          </a>
-          <Image src={astro} alt="astro" class="astro" />
-        </div>
-      </div>
-      <div class="card2">
-        <a href="https://dariorodro.github.io/mip0rtaf0li0/" target="_blank">
-          <Image src={miportafolio} alt="Miportafolio" />
-        </a>
-      </div>
-    </div>
-
-    <div class="proy1">
-      <div class="card1">
-        <h1>Análisis Sistema Starbucks UPC</h1>
-        <p class="badge">🔗 En línea</p>
-        <p>
-          Análisis de funcionamiento del sistema de Starbucks, desarrollado como
-          proyecto académico en la UPC para un curso de Humanidades.
-        </p>
-        <div class="herr">
-          <Image src={html} alt="html" class="img" />
-          <Image src={css} alt="css" class="img" />
-          <Image src={js} alt="js" class="img" />
-          <a
-            href="https://github.com/DarioRodro/analisis-sistema-starbucks-upc.git"
-            target="_blank"
-          >
-            <Image src={githubb} alt="github" />
-          </a>
-        </div>
-      </div>
-      <div class="card2">
-        <a
-          href="https://dariorodro.github.io/analisis-sistema-starbucks-upc/"
-          target="_blank"
-        >
-          <Image src={starbucks} alt="Starbucks" />
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ARQUITECTURA -->
+  <!-- ARQUITECTURA 
   <div class="tab-content" data-content="arquitectura" style="display:none">
     <p class="empty-msg">Próximamente 🚧</p>
   </div>
-</div>
+</div>-->
 
-<script>
-  const buttons = document.querySelectorAll<HTMLButtonElement>(".tab-btn");
-  const contents = document.querySelectorAll<HTMLElement>(".tab-content");
+  <script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>(".tab-btn");
+    const contents = document.querySelectorAll<HTMLElement>(".tab-content");
 
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      buttons.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-      const target = btn.getAttribute("data-tab");
-      contents.forEach((c) => {
-        c.style.display =
-          c.getAttribute("data-content") === target ? "block" : "none";
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        buttons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        const target = btn.getAttribute("data-tab");
+        contents.forEach((c) => {
+          c.style.display =
+            c.getAttribute("data-content") === target ? "block" : "none";
+        });
       });
     });
-  });
-</script>
+  </script>
 
-<style>
-  .linea {
-    position: relative;
-    height: 1px;
-    background-color: #000000;
-    width: 20%;
-    border: 1;
-    border-color: #0f53c2;
-    border-radius: 40%;
-  }
-  .proyects {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px 23%;
-    color: #394665;
-    background: #15171d;
-    scroll-margin-top: 200px;
-  }
-
-  .header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-bottom: 30px;
-  }
-
-  .tabs {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  .tab-btn {
-    background: none;
-    color: #d8d8d8;
-    border: none;
-    border-bottom: 1px solid #0f53c2;
-    border-radius: 00px;
-    padding: 8px 20px;
-    cursor: pointer;
-    font-size: 0.95rem;
-    transition: all 0.2s ease;
-  }
-  .tab-btn:hover {
-    background: #0f53c233;
-  }
-  .tab-btn.active {
-    background: #0f53c2;
-    color: #ffffff;
-  }
-
-  .badge {
-    display: inline-block;
-    background: #212225;
-    color: #d8d8d8;
-    font-size: 0.8rem;
-    padding: 3px 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-
-  .empty-msg {
-    color: #d8d8d8;
-    text-align: center;
-    font-size: 1rem;
-    padding: 40px 0;
-  }
-
-  .doc-link {
-    color: #ffffff;
-    font-size: 0.9rem;
-    border: 1px solid #0f53c2;
-    border-radius: 6px;
-    padding: 6px 12px;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-  .doc-link:hover {
-    background: #0f53c233;
-  }
-
-  .doc-thumb iframe {
-    width: 200%;
-    height: 200%;
-    transform: scale(0.55);
-    transform-origin: top left;
-    border: none;
-  }
-  .tech-text {
-    color: #ffffff;
-    font-size: 0.9rem;
-    border: 1px solid #0f53c2;
-    border-radius: 6px;
-    padding: 4px 10px;
-  }
-
-  .proy1 {
-    display: flex;
-    box-sizing: border-box;
-    padding: 2px;
-    padding-bottom: 50px;
-    height: 100%;
-    max-width: 1000px;
-    border-radius: 16px;
-    overflow: hidden;
-    margin: auto;
-  }
-
-  @media (min-width: 768px) {
-    .proy1 {
-      flex-direction: row;
-    }
-  }
-
-  .card1 {
-    width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .card1 h1 {
-    color: #ffffff !important;
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-    font-weight: normal;
-    text-decoration: none !important;
-  }
-  .card1 p {
-    color: #ffffff !important;
-    margin-bottom: 16px;
-    text-decoration: none !important;
-  }
-  .card1 b {
-    color: #ffffff;
-    margin-bottom: 16px;
-  }
-  a h1,
-  a p,
-  a .badge {
-    color: #ffffff !important;
-    text-decoration: none !important;
-  }
-
-  .herr {
-    display: flex;
-    justify-items: center;
-    text-align: center;
-    gap: 30px;
-  }
-  .herr img {
-    width: 40px;
-    height: auto;
-  }
-  .card2 {
-    width: 700px;
-    border-radius: 16px;
-    padding: 10px;
-  }
-  .card2 img {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #0f54c252;
-    animation: bounce 1.5s infinite alternate;
-    border-radius: 8px;
-  }
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-10px);
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 1440px) {
+  <style>
     .linea {
-      width: 50%;
+      position: relative;
+      height: 1px;
+      background-color: #000000;
+      width: 20%;
+      border: 1;
+      border-color: #0f53c2;
+      border-radius: 40%;
     }
     .proyects {
-      padding: 25px 18%;
-    }
-    .proy1 {
+      justify-content: center;
       flex-direction: column;
-      padding-bottom: 15px;
+      align-items: center;
+      padding: 25px 23%;
+      color: #394665;
+      background: #15171d;
+      scroll-margin-top: 200px;
     }
-    .card1,
-    .card2 {
-      width: 100%;
+
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      background: none;
+      color: #d8d8d8;
+      border: none;
+      border-bottom: 1px solid #0f53c2;
+      border-radius: 00px;
+      padding: 8px 20px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+    .tab-btn:hover {
+      background: #0f53c233;
+    }
+    .tab-btn.active {
+      background: #0f53c2;
+      color: #ffffff;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #212225;
+      color: #d8d8d8;
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .empty-msg {
+      color: #d8d8d8;
+      text-align: center;
+      font-size: 1rem;
+      padding: 40px 0;
+    }
+
+    .doc-link {
+      color: #ffffff;
+      font-size: 0.9rem;
+      border: 1px solid #0f53c2;
+      border-radius: 6px;
+      padding: 6px 12px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .doc-link:hover {
+      background: #0f53c233;
+    }
+
+    .doc-thumb iframe {
+      width: 200%;
+      height: 200%;
+      transform: scale(0.55);
+      transform-origin: top left;
+      border: none;
+    }
+    .tech-text {
+      color: #ffffff;
+      font-size: 0.9rem;
+      border: 1px solid #0f53c2;
+      border-radius: 6px;
+      padding: 4px 10px;
+    }
+
+    .proy1 {
+      display: flex;
+      box-sizing: border-box;
+      padding: 2px;
+      padding-bottom: 50px;
+      height: 100%;
+      max-width: 1000px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    @media (min-width: 768px) {
+      .proy1 {
+        flex-direction: row;
+      }
+    }
+
+    .card1 {
+      width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     .card1 h1 {
-      font-size: 1.2rem;
+      color: #ffffff !important;
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      font-weight: normal;
+      text-decoration: none !important;
     }
     .card1 p {
-      font-size: 0.9rem;
+      color: #ffffff !important;
+      margin-bottom: 16px;
+      text-decoration: none !important;
     }
-    .card2 img {
-      width: 100%;
-      height: auto;
+    .card1 b {
+      color: #ffffff;
+      margin-bottom: 16px;
     }
-    .carddoc {
-      width: 0;
-      height: 0;
+    a h1,
+    a p,
+    a .badge {
+      color: #ffffff !important;
+      text-decoration: none !important;
     }
 
     .herr {
-      justify-content: center;
+      display: flex;
+      justify-items: center;
+      text-align: center;
+      gap: 30px;
     }
     .herr img {
-      width: 30px;
+      width: 40px;
       height: auto;
     }
-  }
-
-  @media (max-width: 768px) {
-    .linea {
-      width: 50%;
-    }
-    .proyects {
-      padding: 25px 5%;
-    }
-    .proy1 {
-      flex-direction: column;
-      padding-bottom: 15px;
-    }
-    .card1,
     .card2 {
-      width: 100%;
-    }
-    .card1 h1 {
-      font-size: 1.2rem;
-    }
-    .card1 p {
-      font-size: 0.9rem;
+      width: 700px;
+      border-radius: 16px;
+      padding: 10px;
     }
     .card2 img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      border: 2px solid #0f54c252;
+      animation: bounce 1.5s infinite alternate;
+      border-radius: 8px;
+    }
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
     }
 
-    .herr {
-      justify-content: center;
+    @media (min-width: 769px) and (max-width: 1440px) {
+      .linea {
+        width: 50%;
+      }
+      .proyects {
+        padding: 25px 18%;
+      }
+      .proy1 {
+        flex-direction: column;
+        padding-bottom: 15px;
+      }
+      .card1,
+      .card2 {
+        width: 100%;
+      }
+      .card1 h1 {
+        font-size: 1.2rem;
+      }
+      .card1 p {
+        font-size: 0.9rem;
+      }
+      .card2 img {
+        width: 100%;
+        height: auto;
+      }
+      .carddoc {
+        width: 0;
+        height: 0;
+      }
+
+      .herr {
+        justify-content: center;
+      }
+      .herr img {
+        width: 30px;
+        height: auto;
+      }
     }
-    .herr img {
-      width: 30px;
-      height: auto;
+
+    @media (max-width: 768px) {
+      .linea {
+        width: 50%;
+      }
+      .proyects {
+        padding: 25px 5%;
+      }
+      .proy1 {
+        flex-direction: column;
+        padding-bottom: 15px;
+      }
+      .card1,
+      .card2 {
+        width: 100%;
+      }
+      .card1 h1 {
+        font-size: 1.2rem;
+      }
+      .card1 p {
+        font-size: 0.9rem;
+      }
+      .card2 img {
+        width: 100%;
+        height: auto;
+      }
+
+      .herr {
+        justify-content: center;
+      }
+      .herr img {
+        width: 30px;
+        height: auto;
+      }
     }
-  }
-</style>
+  </style>
+</div>
